@@ -1,0 +1,17 @@
+.feed {
+  flex: 1;
+  max-width: 590px;
+  margin: 0 auto;
+  padding: 16px 0;
+  min-width: 0;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .feed { max-width: 100%; padding: 12px 8px; }
+}

@@ -1,0 +1,103 @@
+.stories-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.stories-track {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0 8px;
+  scrollbar-width: none;
+}
+
+.stories-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* BASE CARD */
+.story-card {
+  position: relative;
+  min-width: 110px;
+  width: 110px;
+  height: 195px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* ── ADD / CREATE STORY CARD ── */
+.add-story-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.add-story-card .story-image {
+  flex: 0 0 68%;             /* top 68% */
+  width: 100%;
+}
+
+.add-icon {
+  position: absolute;
+  bottom: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1877f2;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  z-index: 2;
+}
+
+.story-add-bottom {
+  flex: 0 0 32%;             /* bottom 32% */
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.story-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #050505;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ── REGULAR STORY CARD ── */
+.story-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.story-avatar {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.story-name-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 8px;
+  right: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  line-height: 1.3;
+}
