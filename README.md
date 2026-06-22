@@ -10,11 +10,6 @@ A front-end recreation of Facebook's interface, built with **React** and **Vite*
 - 📸 **Stories Section** — Horizontally scrollable stories bar
 - 📱 **Responsive Design** — Optimized for desktop, tablet, and mobile breakpoints
 
-**##Live Demo##**
-Live demo available at  - 
-
-https://raibayub.github.io/kachy-dhaggy/
-
 ## Tech Stack
 
 - **React 19**
@@ -28,6 +23,28 @@ https://raibayub.github.io/kachy-dhaggy/
 - Node.js (v18 or higher recommended)
 - npm
 
+### Installation
+
+```bash
+git clone https://github.com/raibayub/facebook-clone.git
+cd facebook-clone
+npm install
+```
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
 ## Project Structure
 
 ```
@@ -40,7 +57,6 @@ facebook-clone/
 ├── package.json
 └── vite.config.js
 ```
-
 
 ## Author
 
